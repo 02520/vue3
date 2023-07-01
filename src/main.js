@@ -36,6 +36,10 @@ app.directive('focus', (el) => {
   el.focus()
 })
 
+app.directive('color', (el, binding) => {
+  el.style.color = binding.value
+})
+
 // axios.defaults.baseURL = 'http://www.escook.cn'
 // app.config.globalProperties.$http = axios
 

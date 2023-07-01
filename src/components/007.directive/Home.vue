@@ -1,8 +1,8 @@
 <template>
   <div class="home-container">
-    <h3>Home组件 --- {{ count }}</h3>
+    <h3 v-color="'red'">Home组件 --- {{ count }}</h3>
     <hr />
-    <input type="text" class="form-control" v-focus />
+    <input type="text" class="form-control" v-focus v-color="'cyan'" />
     <button type="button" class="btn btn-primary" @click="count += 1">
       +1
     </button>
@@ -19,11 +19,11 @@ export default {
   },
   //自定义指令
   directives: {
-    focus: {
-      mounted(el) {
-        el.focus()
-      }
-    }
+    // focus: {
+    //   mounted(el) {
+    //     el.focus()
+    //   }
+    // }
   }
 }
 </script>
