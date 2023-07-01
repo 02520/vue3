@@ -22,15 +22,18 @@ import './assets/css/bootstrap.css'
 const app = createApp(App)
 
 // 声明全局自定义指令
-app.directive('focus', {
-  // mounted 只会触发一次
-  mounted(el) {
-    el.focus()
-  },
-  // updated 当数据更新就会触发
-  updated(el) {
-    el.focus()
-  }
+// app.directive('focus', {
+//   // mounted 只会触发一次
+//   mounted(el) {
+//     el.focus()
+//   },
+//   // updated 当数据更新就会触发
+//   updated(el) {
+//     el.focus()
+//   }
+// })
+app.directive('focus', (el) => {
+  el.focus()
 })
 
 // axios.defaults.baseURL = 'http://www.escook.cn'
