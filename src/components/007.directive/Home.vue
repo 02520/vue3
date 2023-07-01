@@ -19,11 +19,11 @@ export default {
   },
   //自定义指令
   directives: {
-    // focus: {
-    //   mounted(el) {
-    //     el.focus()
-    //   }
-    // }
+    focus: {
+      mounted(el) {
+        el.focus()
+      }
+    }
   }
 }
 </script>
